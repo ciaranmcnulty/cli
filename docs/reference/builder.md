@@ -1271,8 +1271,8 @@ guide – Leverage build cache](https://docs.docker.com/develop/develop-images/
 COPY has two forms:
 
 ```dockerfile
-COPY [--chown=<user>:<group>] <src>... <dest>
-COPY [--chown=<user>:<group>] ["<src>",... "<dest>"]
+COPY [--chown=<user>:<group>] [--from=<name>] <src>... <dest>
+COPY [--chown=<user>:<group>] [--from=<name>] ["<src>",... "<dest>"]
 ```
 
 This latter form is required for paths containing whitespace
